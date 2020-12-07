@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <dl>
+        <dt>1.匯入資料須使用<sapn class='high-light'>mongoimport</sapn>指令</dt>
+        <dd>
+            因未導入環境變數，所以找不到mongoimport.exe
+            <img src="img/4-1.png" alt="">
+        </dd>
+        <dt>2.將mongoimport.exe導入環境變數</dt>
+        <dd>
+            (1)安裝目錄下竟然不存在mongoimport.exe => 已分開，須獨力下載
+            <img src="img/4-2.png" alt="">
+        </dd>
+        <dd>
+            (2)
+            <img src="img/4-3.png" alt="">
+        </dd>
+        <dd>
+            (3)
+            <img src="img/4-4.png" alt="">
+        </dd>
+        <dd>
+            (4)
+            <img src="img/4-5.png" alt="">
+        </dd>
+        <dd>
+            (5)
+            <img src="img/4-6.png" alt="">
+        </dd>
+        <dd>
+            (6)打開壓縮檔，發現目標即在其中
+            <img src="img/4-7.png" alt="">
+        </dd>
+        <dd>
+            (7)將所有.exe放進C:\Program Files\MongoDB\Server\4.4\bin
+            <img src="img/4-8.png" alt="">
+        </dd>
+        <dd>
+            (8)加入環境變數
+            <img src="img/4-9.png" alt="">
+        </dd>
+        <dd>
+            (9)mongoimport不再報錯
+            <img src="img/4-10.png" alt="">
+        </dd>
+        <dt>3.導入數據<span class="high-light">mongoimport -d 數據庫名稱 -c 表格名稱 --file 要導入的數據文件</span></dt>
+        <dd>
+            成功導入6筆資料
+            <img src="img/4-11.png" alt="">
+        </dd>
+        <dd>
+            可以看見新表與其資料
+            <img src="img/4-12.png" alt="">
+        </dd>
+    </dl>
+</body>
+
+</html>

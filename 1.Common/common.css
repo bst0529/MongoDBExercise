@@ -1,0 +1,24 @@
+    img {
+        display: block;
+    }
+    
+    .high-light {
+        border: 1px solid #333;
+        padding: 5px 10px;
+        background-color: yellow;
+        margin: 0 5px;
+    }
+    
+    dt {
+        margin: 20px 0 10px 0;
+        background-color: #ddd;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #000;
+    }
+    
+    dd {
+        margin-bottom: 10px;
+    }
